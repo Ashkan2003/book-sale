@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="fa" dir="rtl">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>فروشگاه کتاب - صفحه اصلی</title>
+    <link rel="stylesheet" href="styles.css" />
+    <style>
+      .badge {
+        display: inline-block;
+        background: #4caf50;
+        color: white;
+        border-radius: 50%;
+        width: 20px;
+        height: 20px;
+        text-align: center;
+        line-height: 20px;
+        font-size: 12px;
+        margin-right: 5px;
+      }
+      .hidden {
+        display: none;
+      }
+    </style>
+  </head>
+  <body>
+    <header>
+      <div class="container">
+        <div class="logo">فروشگاه کتاب</div>
+        <button class="mobile-menu-btn" id="mobileMenuBtn">
+          <span></span>
+          <span></span>
+          <span></span>
+        </button>
+        <nav>
+          <ul>
+            <li><a href="index.html" class="active">صفحه اصلی</a></li>
+            <li><a href="#" id="loginBtn">ورود</a></li>
+            <li><a href="#" id="signupBtn">ثبت نام</a></li>
+            <li><a href="#" id="uploadBtn" class="hidden">آپلود کتاب</a></li>
+            <li>
+              <a href="cart.html" id="cartLink" class="hidden"
+                >سبد خرید <span class="cart-count badge hidden">0</span></a
+              >
+            </li>
+            <li><a href="#" id="logoutBtn" class="hidden">خروج</a></li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+
+    <main>
+      <section class="landing-section">
+        <div class="content">
+          <!-- <div class="item">
+            <img
+              src="https://fastly.picsum.photos/id/24/4855/1803.jpg?hmac=ICVhP1pUXDLXaTkgwDJinSUS59UWalMxf4SOIWb9Ui4"
+              alt="Online Book"
+              class="book-image"
+            />
+          </div> -->
+          <div class="item">
+            <h1>Discover Your Next Great Read</h1>
+            <p>
+              به فروشگاه کتاب پارسا خوش امدید.دنیایی از تنوع کتاب ها در انتظار
+              شماست. برای خرید یا اپلود کتاب های خود لطفا وارد کاربری خود شوید.
+              با خرید از فروشگاه ما تجربه خرید امن و متفاوتی را احساس کنید
+            </p>
+            <a href="#books" class="cta-button">مشاهده</a>
+          </div>
+        </div>
+      </section>
+
+      <div class="container">
+        <h1>کتاب‌های ویژه</h1>
+        <div class="books-container" id="booksContainer">
+          <!-- This loading message will be replaced by JavaScript with all 12 books -->
+          <div class="loading-message">در حال بارگذاری کتاب‌ها...</div>
+        </div>
+      </div>
+    </main>
+
+    <footer>
+      <div class="footer-container">
+        <div class="footer-section">
+          <h3>درباره ما</h3>
+          <p style="color: #ecf0f1; line-height: 1.6">
+            فروشگاه کتاب، مرجع خرید آنلاین انواع کتاب‌های فارسی و خارجی با تخفیف
+            ویژه. بیش از 10 سال سابقه در ارائه بهترین خدمات به دوستداران کتاب.
+          </p>
+          <div class="social-links">
+            <a href="#" title="اینستاگرام">ا</a>
+            <a href="#" title="تلگرام">ت</a>
+            <a href="#" title="توییتر">ت</a>
+            <a href="#" title="لینکدین">ل</a>
+          </div>
+        </div>
+
+        <div class="footer-section">
+          <h3>دسترسی سریع</h3>
+          <ul class="footer-links">
+            <li><a href="index.html">صفحه اصلی</a></li>
+            <li><a href="#">جدیدترین کتاب‌ها</a></li>
+            <li><a href="#">پرفروش‌ترین‌ها</a></li>
+            <li><a href="#">تخفیف‌های ویژه</a></li>
+            <li><a href="#">درباره ما</a></li>
+            <li><a href="#">تماس با ما</a></li>
+          </ul>
+        </div>
+
+        <div class="footer-section">
+          <h3>خدمات مشتریان</h3>
+          <ul class="footer-links">
+            <li><a href="#">پرسش‌های متداول</a></li>
+            <li><a href="#">شیوه‌های پرداخت</a></li>
+            <li><a href="#">شرایط بازگشت کالا</a></li>
+            <li><a href="#">حریم خصوصی</a></li>
+            <li><a href="#">قوانین و مقررات</a></li>
+          </ul>
+        </div>
+
+        <div class="footer-section">
+          <h3>تماس با ما</h3>
+          <div class="contact-info">
+            <div>
+              <span>📍</span>
+              <span>تبریز </span>
+            </div>
+            <div>
+              <span>📱</span>
+              <span>۰۹۱۴۰۱۲۴۰۰۸</span>
+            </div>
+            <div>
+              <span>📧</span>
+              <span>parsamehrazad78@gmail.com</span>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="footer-bottom">
+        <p>فروشگاه کتاب پارسا</p>
+        <p>طراحی و توسعه: پارسا مهرازاد</p>
+      </div>
+    </footer>
+
+    <script src="scripts/books.js"></script>
+    <script src="scripts/auth.js"></script>
+    <script src="scripts/cart.js"></script>
+    <script src="scripts/app.js"></script>
+    <script>
+      // Mobile menu functionality
+      document.addEventListener("DOMContentLoaded", function () {
+        const mobileMenuBtn = document.getElementById("mobileMenuBtn");
+        const body = document.body;
+
+        mobileMenuBtn.addEventListener("click", function () {
+          body.classList.toggle("mobile-menu-open");
+        });
+      });
+    </script>
+  </body>
+</html>

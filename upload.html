@@ -1,0 +1,231 @@
+<!DOCTYPE html>
+<html lang="fa" dir="rtl">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>فروشگاه کتاب - آپلود کتاب</title>
+    <link rel="stylesheet" href="styles.css" />
+    <style>
+      .image-drop-area {
+        border: 2px dashed #ccc;
+        border-radius: 8px;
+        padding: 20px;
+        text-align: center;
+        cursor: pointer;
+        background-color: #f9f9f9;
+        transition: all 0.3s ease;
+      }
+
+      .image-drop-area.drag-over {
+        border-color: #4caf50;
+        background-color: rgba(76, 175, 80, 0.1);
+      }
+
+      .file-label {
+        color: #4caf50;
+        cursor: pointer;
+        text-decoration: underline;
+      }
+
+      .image-preview {
+        margin-top: 10px;
+        max-width: 100%;
+      }
+
+      .image-preview img {
+        max-width: 100%;
+        max-height: 200px;
+        border-radius: 4px;
+        box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+      }
+
+      .hidden {
+        display: none;
+      }
+    </style>
+  </head>
+  <body>
+    <header>
+      <div class="container">
+        <div class="logo">فروشگاه کتاب</div>
+        <button class="mobile-menu-btn" id="mobileMenuBtn">
+          <span></span>
+          <span></span>
+          <span></span>
+        </button>
+        <nav>
+          <ul>
+            <li><a href="index.html">صفحه اصلی</a></li>
+            <li><a href="#" id="uploadBtn" class="active">آپلود کتاب</a></li>
+            <li>
+              <a href="cart.html" id="cartLink"
+                >سبد خرید <span class="cart-count badge hidden">0</span></a
+              >
+            </li>
+            <li><a href="#" id="logoutBtn">خروج</a></li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+
+    <main>
+      <div class="container auth-container">
+        <h1>آپلود کتاب جدید</h1>
+        <form id="uploadForm">
+          <div class="form-group">
+            <label for="bookTitle">عنوان کتاب</label>
+            <input type="text" id="bookTitle" name="bookTitle" required />
+          </div>
+          <div class="form-group">
+            <label for="bookAuthor">نویسنده</label>
+            <input type="text" id="bookAuthor" name="bookAuthor" required />
+          </div>
+          <div class="form-group">
+            <label for="bookDescription">توضیحات</label>
+            <textarea
+              id="bookDescription"
+              name="bookDescription"
+              rows="4"
+              required
+            ></textarea>
+          </div>
+          <div class="form-group">
+            <label for="bookPrice">قیمت (تومان)</label>
+            <input
+              type="number"
+              id="bookPrice"
+              name="bookPrice"
+              step="0.01"
+              min="0"
+              required
+            />
+          </div>
+          <div class="form-group">
+            <label for="bookRating">امتیاز (۱-۵)</label>
+            <input
+              type="number"
+              id="bookRating"
+              name="bookRating"
+              min="1"
+              max="5"
+              step="0.1"
+              required
+            />
+          </div>
+          <div class="form-group">
+            <label>تصویر کتاب</label>
+            <div id="imageDropArea" class="image-drop-area">
+              <p>
+                تصویر را اینجا رها کنید یا
+                <label for="imageInput" class="file-label">انتخاب کنید</label>
+              </p>
+              <input
+                type="file"
+                id="imageInput"
+                accept="image/*"
+                style="display: none"
+              />
+              <div id="imagePreview" class="image-preview hidden"></div>
+              <input type="hidden" id="bookImage" name="bookImage" required />
+            </div>
+          </div>
+          <div class="form-group">
+            <button type="submit">آپلود کتاب</button>
+          </div>
+        </form>
+      </div>
+    </main>
+
+    <footer>
+      <div class="footer-container">
+        <div class="footer-section">
+          <h3>درباره ما</h3>
+          <p style="color: #ecf0f1; line-height: 1.6">
+            فروشگاه کتاب، مرجع خرید آنلاین انواع کتاب‌های فارسی و خارجی با تخفیف
+            ویژه. بیش از 10 سال سابقه در ارائه بهترین خدمات به دوستداران کتاب.
+          </p>
+          <div class="social-links">
+            <a href="#" title="اینستاگرام">ا</a>
+            <a href="#" title="تلگرام">ت</a>
+            <a href="#" title="توییتر">ت</a>
+            <a href="#" title="لینکدین">ل</a>
+          </div>
+        </div>
+
+        <div class="footer-section">
+          <h3>دسترسی سریع</h3>
+          <ul class="footer-links">
+            <li><a href="index.html">صفحه اصلی</a></li>
+            <li><a href="#">جدیدترین کتاب‌ها</a></li>
+            <li><a href="#">پرفروش‌ترین‌ها</a></li>
+            <li><a href="#">تخفیف‌های ویژه</a></li>
+            <li><a href="#">درباره ما</a></li>
+            <li><a href="#">تماس با ما</a></li>
+          </ul>
+        </div>
+
+        <div class="footer-section">
+          <h3>خدمات مشتریان</h3>
+          <ul class="footer-links">
+            <li><a href="#">پرسش‌های متداول</a></li>
+            <li><a href="#">شیوه‌های پرداخت</a></li>
+            <li><a href="#">شرایط بازگشت کالا</a></li>
+            <li><a href="#">حریم خصوصی</a></li>
+            <li><a href="#">قوانین و مقررات</a></li>
+          </ul>
+        </div>
+
+        <div class="footer-section">
+          <h3>تماس با ما</h3>
+          <div class="contact-info">
+            <div>
+              <span>📍</span>
+              <span>تهران، خیابان انقلاب، خیابان 12 فروردین</span>
+            </div>
+            <div>
+              <span>📱</span>
+              <span>021-12345678</span>
+            </div>
+            <div>
+              <span>📧</span>
+              <span>info@bookstore.ir</span>
+            </div>
+          </div>
+          <h4 style="color: #1abc9c; margin-top: 15px; margin-bottom: 10px">
+            دانلود اپلیکیشن
+          </h4>
+          <div class="footer-app-badges">
+            <img
+              src="https://biupapp.com/wp-content/themes/phlox-pro-child/assets/images/biupapp-bazar-badge.png"
+              alt="دانلود از بازار"
+            />
+            <img
+              src="https://biupapp.com/wp-content/themes/phlox-pro-child/assets/images/biupapp-sibapp-badge.png"
+              alt="دانلود از سیب‌اپ"
+            />
+          </div>
+        </div>
+      </div>
+
+      <div class="footer-bottom">
+        <p>تمامی حقوق محفوظ است &copy; ۱۴۰۳ فروشگاه کتاب</p>
+        <p>طراحی و توسعه: تیم فروشگاه کتاب</p>
+      </div>
+    </footer>
+
+    <script src="scripts/books.js"></script>
+    <script src="scripts/auth.js"></script>
+    <script src="scripts/upload.js"></script>
+    <script>
+      // Mobile menu functionality
+      document.addEventListener("DOMContentLoaded", function () {
+        const mobileMenuBtn = document.getElementById("mobileMenuBtn");
+        const body = document.body;
+
+        mobileMenuBtn.addEventListener("click", function () {
+          body.classList.toggle("mobile-menu-open");
+        });
+      });
+    </script>
+  </body>
+</html>

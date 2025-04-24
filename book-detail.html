@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="fa" dir="rtl">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>فروشگاه کتاب - جزئیات کتاب</title>
+    <link rel="stylesheet" href="styles.css" />
+    <style>
+      .badge {
+        display: inline-block;
+        background: #4caf50;
+        color: white;
+        border-radius: 50%;
+        width: 20px;
+        height: 20px;
+        text-align: center;
+        line-height: 20px;
+        font-size: 12px;
+        margin-right: 5px;
+      }
+      .in-cart-message {
+        color: #4caf50;
+        margin-right: 10px;
+        font-weight: bold;
+      }
+      .book-detail-actions {
+        display: flex;
+        align-items: center;
+        margin-top: 20px;
+      }
+      .hidden {
+        display: none;
+      }
+    </style>
+  </head>
+  <body>
+    <header>
+      <div class="logo">فروشگاه کتاب</div>
+      <nav>
+        <ul>
+          <li><a href="index.html">صفحه اصلی</a></li>
+          <li><a href="#" id="loginBtn">ورود</a></li>
+          <li><a href="#" id="signupBtn">ثبت نام</a></li>
+          <li><a href="#" id="uploadBtn" class="hidden">آپلود کتاب</a></li>
+          <li>
+            <a href="cart.html" id="cartLink" class="hidden"
+              >سبد خرید <span class="cart-count badge hidden">0</span></a
+            >
+          </li>
+          <li><a href="#" id="logoutBtn" class="hidden">خروج</a></li>
+        </ul>
+      </nav>
+    </header>
+
+    <main>
+      <div class="container">
+        <div class="back-link">
+          <a href="index.html">بازگشت به صفحه کتاب‌ها &rarr;</a>
+        </div>
+        <div class="book-detail" id="bookDetail">
+          <!-- Book details will be dynamically loaded here -->
+          <div class="loading-message">در حال بارگذاری جزئیات کتاب...</div>
+        </div>
+      </div>
+    </main>
+
+    <footer>
+      <p>تمامی حقوق محفوظ است &copy; ۲۰۲۳ فروشگاه کتاب</p>
+    </footer>
+
+    <!-- Make sure books.js is loaded first -->
+    <script src="scripts/books.js"></script>
+    <script src="scripts/auth.js"></script>
+    <script src="scripts/cart.js"></script>
+    <!-- Use our fixed script -->
+    <script src="scripts/book-detail.js"></script>
+  </body>
+</html>
