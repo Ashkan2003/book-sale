@@ -171,9 +171,9 @@ h1 {
 
 .item p {
   font-size: 1.2em;
-  margin: 40px 0;
-  padding-left: 90px;
-  padding-right: 90px;
+  margin: 20px 0;
+  /* padding-left: 90px;
+  padding-right: 90px; */
 }
 
 .cta-button {
