@@ -8,6 +8,7 @@ let books = [
         description: "داستانی در دوران جاز در لانگ آیلند، این رمان تعاملات راوی نیک کاراوی را با میلیاردر اسرارآمیز جی گتسبی و وسواس گتسبی برای اتحاد مجدد با عشق سابقش، دیزی بوکانان به تصویر می‌کشد.",
         price: 129000,
         rating: 4.5,
+        phone: "09140124008",
         image: "https://fastly.picsum.photos/id/20/3670/2462.jpg?hmac=CmQ0ln-k5ZqkdtLvVO23LjVAEabZQx2wOaT4pyeG10I"
     },
     {
@@ -17,6 +18,7 @@ let books = [
         description: "رمان فراموش نشدنی از دوران کودکی در یک شهر جنوبی خواب‌آلود و بحران وجدانی که آن را تکان داد. داستانی گیرا، دل‌آزار و کاملاً قابل توجه از بلوغ در جنوبی که با تعصب مهلک مسموم شده است.",
         price: 149000,
         rating: 4.8,
+        phone: "09140124008",
         image: "https://fastly.picsum.photos/id/24/4855/1803.jpg?hmac=ICVhP1pUXDLXaTkgwDJinSUS59UWalMxf4SOIWb9Ui4"
     },
     {
@@ -26,6 +28,7 @@ let books = [
         description: "در میان متون برجسته قرن بیستم، هزار و نهصد و هشتاد و چهار اثری نادر است که با واقعی‌تر شدن برزخ آینده‌نگرانه‌اش، ترسناک‌تر می‌شود.",
         price: 119000,
         rating: 4.7,
+        phone: "09140124008",
         image: "https://fastly.picsum.photos/id/111/4400/2656.jpg?hmac=leq8lj40D6cqFq5M_NLXkMYtV-30TtOOnzklhjPaAAQ"
     },
     {
@@ -35,6 +38,7 @@ let books = [
         description: "از زمان موفقیت فوری آن در سال ۱۸۱۳، غرور و تعصب یکی از محبوب‌ترین رمان‌ها در زبان انگلیسی باقی مانده است.",
         price: 99000,
         rating: 4.6,
+        phone: "09140124008",
         image: "https://fastly.picsum.photos/id/180/2400/1600.jpg?hmac=Ig-CXcpNdmh51k3kXpNqNqcDYTwXCIaonYiBOnLXBb8"
     },
     {
@@ -44,6 +48,7 @@ let books = [
         description: "بیلبو بگینز هابیتی است که از زندگی راحت و بی‌بلندپروازی لذت می‌برد، و به ندرت از آشپزخانه یا سردابش دورتر می‌رود. اما آرامش او هنگامی که جادوگر گندالف و گروهی از دورف‌ها دم در خانه‌اش ظاهر می‌شوند، به هم می‌ریزد.",
         price: 159000,
         rating: 4.9,
+        phone: "09140124008",
         image: "https://fastly.picsum.photos/id/214/2729/2047.jpg?hmac=sbADnAldkjZ_C8bOEoXFBSHedcFRZYO_GPg3eHwQ5m0"
     },
     {
@@ -52,7 +57,8 @@ let books = [
         author: "جی.دی. سلینجر",
         description: "قهرمان-راوی ناطور دشت کودکی باستانی شانزده ساله، اهل نیویورک به نام هولدن کالفیلد است. از طریق شرایطی که تمایل به توصیف بزرگسالانه و دست دوم را منتفی می‌کند، او مدرسه شبانه‌روزی خود در پنسیلوانیا را ترک می‌کند و برای سه روز به صورت زیرزمینی در نیویورک سیتی می‌رود.",
         price: 109000,
-        rating: 4.3,
+        rating: 4.98,
+        phone: "09140124008",
         image: "https://fastly.picsum.photos/id/20/3670/2462.jpg?hmac=CmQ0ln-k5ZqkdtLvVO23LjVAEabZQx2wOaT4pyeG10I"
     },
     {
@@ -62,6 +68,7 @@ let books = [
         description: "داستان حماسی خاندان بوئندیا و هفت نسل آن‌ها در شهر افسانه‌ای ماکوندو. این رمان ترکیبی از واقعیت و افسانه است که سبک رئالیسم جادویی را به اوج خود می‌رساند.",
         price: 189000,
         rating: 4.9,
+        phone: "09140124008",
         image: "https://fastly.picsum.photos/id/318/3264/2448.jpg?hmac=zkYZ29-Ww_A4O_kZ3gjlpFQuEYELWgeM6aI_CMG01BU"
     },
     {
@@ -71,6 +78,7 @@ let books = [
         description: "یکی از بزرگترین رمان‌های ادبیات جهان که داستان زندگی پنج خانواده اشرافی روسی را در دوره جنگ‌های ناپلئونی روایت می‌کند.",
         price: 215000,
         rating: 4.7,
+        phone: "09140124008",
         image: "https://fastly.picsum.photos/id/20/3670/2462.jpg?hmac=CmQ0ln-k5ZqkdtLvVO23LjVAEabZQx2wOaT4pyeG10I"
     },
     {
@@ -80,6 +88,7 @@ let books = [
         description: "داستان شوالیه‌ای خیال‌پرداز که همراه با خدمتکارش سانچو پانزا به دنبال ماجراجویی می‌رود و با آسیاب‌های بادی می‌جنگد.",
         price: 145000,
         rating: 4.6,
+        phone: "09140124008",
         image: "https://fastly.picsum.photos/id/318/3264/2448.jpg?hmac=zkYZ29-Ww_A4O_kZ3gjlpFQuEYELWgeM6aI_CMG01BU"
     },
     {
@@ -89,6 +98,7 @@ let books = [
         description: "یکی از مهم‌ترین رمان‌های مدرن فارسی که روایتی تاریک و رؤیاگونه از زندگی درونی یک مرد منزوی ارائه می‌دهد.",
         price: 85000,
         rating: 4.8,
+        phone: "09140124008",
         image: "https://fastly.picsum.photos/id/250/4928/3264.jpg?hmac=4oIwzXlpK4KU3wySTnATICCa4H6xwbSGifrxv7GafWU"
     },
     {
@@ -98,6 +108,7 @@ let books = [
         description: "داستان دیدار خلبانی سقوط کرده در صحرا با پسربچه‌ای مرموز و فلسفی از سیاره‌ای دیگر. این کتاب با زبانی ساده، مفاهیم عمیقی درباره زندگی و انسانیت بیان می‌کند.",
         price: 78000,
         rating: 4.9,
+        phone: "09140124008",
         image: "https://fastly.picsum.photos/id/20/3670/2462.jpg?hmac=CmQ0ln-k5ZqkdtLvVO23LjVAEabZQx2wOaT4pyeG10I"
     },
     {
@@ -107,6 +118,7 @@ let books = [
         description: "داستان گرگور سامسا، فروشنده‌ای که یک روز صبح از خواب بیدار می‌شود و متوجه می‌شود به یک حشره غول‌پیکر تبدیل شده است. این اثر کلاسیک کافکا، تصویری تلخ و نمادین از بیگانگی انسان مدرن ارائه می‌دهد.",
         price: 92000,
         rating: 4.5,
+        phone: "09140124008",
         image: "https://fastly.picsum.photos/id/250/4928/3264.jpg?hmac=4oIwzXlpK4KU3wySTnATICCa4H6xwbSGifrxv7GafWU"
     }
 ];

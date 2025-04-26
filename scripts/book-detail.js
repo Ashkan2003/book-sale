@@ -65,9 +65,10 @@ function displayBookDetail(book) {
                 <div class="book-detail-meta">
                     <p class="book-detail-price">${book.price.toFixed(0)} تومان</p>
                     <p class="book-detail-rating">★ ${book.rating.toFixed(1)}</p>
-                </div>
-                <p class="book-detail-description">${book.description}</p>
-                <div class="book-detail-actions">
+                    </div>
+                    <p class="book-detail-description">${book.description}</p>
+                    <div class="book-detail-actions">
+                    <p class="book-detail-ratin">  تلفن فروشنده   ${book.phone} </p>
                     <button id="buyButton" class="buy-button">خرید</button>
                     ${isBookInCart(book.id) ? '<span class="in-cart-message">این کتاب در سبد خرید شما موجود است</span>' : ''}
                 </div>

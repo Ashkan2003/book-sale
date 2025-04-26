@@ -119,6 +119,7 @@ function setupUploadForm() {
             const author = document.getElementById('bookAuthor').value;
             const description = document.getElementById('bookDescription').value;
             const price = parseFloat(document.getElementById('bookPrice').value);
+            const phone = parseFloat(document.getElementById('phone').value);
             const rating = parseFloat(document.getElementById('bookRating').value);
             const image = document.getElementById('bookImage').value;
 
@@ -134,6 +135,7 @@ function setupUploadForm() {
                 author,
                 description,
                 price,
+                phone,
                 rating,
                 image
             };
